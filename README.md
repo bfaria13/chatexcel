@@ -23,13 +23,15 @@ python main.py
 
 ### Setup
 
-1. First create and .env file with your model credentials.
-<br>Example:
+1. First create an .env file with your model credentials.
+<br>To do that rename the .env-example to .env and replace the variables values by your credentials. For example:
 ```
-.env file:
+mv .env-example .env
+vi .env:
+
 MODEL = "gpt-4o-mini" # deployment model name
-API_VERSION = "2024-06-01"
-API_KEY = "XXXXXXXXXXXXXXXXX"
+API_VERSION = "2024-06-01" # for Azure OpenAI Service
+API_KEY = "your_api_key"  # your API key
 ENDPOINT = "https://your-account-name.cognitiveservices.azure.com"
 ```
 
